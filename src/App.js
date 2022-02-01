@@ -6,11 +6,11 @@ import './App.css'
 
 const App = () => {
   return (
-    <div className="app">
-      <div className="navbar">
+    <div className='app'>
+      <div className='navbar'>
         <Navbar />
       </div>
-      <div className="main">
+      <div className='main'>
         <Layout>
           <div className='routes'>
             <Switch>
@@ -32,9 +32,17 @@ const App = () => {
             </Switch>
           </div>
         </Layout>
-      </div>
-      <div className="footer">
-
+        <div className='footer'>
+          <Typography.Title level={5} style={{ color: 'white', textAlign: 'center'}}>
+            Cryptoverse <br />
+            All rights reserved
+          </Typography.Title>
+          <Space>
+            <Link to='/'>Home</Link>
+            <Link to='/exchanges'>Exchanges</Link>
+            <Link to='/news'>News</Link>
+          </Space>
+        </div>
       </div>
     </div>
   )
